@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>UserTech</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="/src/css/style.css" />
   <link rel="stylesheet" href="/src/css/barra-de-rolamento.css">
-  <link rel="shortcut icon" href="src/img/icon-cloud-home.png" type="image/x-icon">
+  <link rel="shortcut icon" href="../src/img/icon-cloud-home.png" type="image/x-icon">
 </head>
+
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light py-2 shadow-sm">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light custom-bg py-2 shadow-sm">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#">UserTech</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      
+      <a class="navbar-brand" href="#">UserTech Cloud
+        <img src="/src/img/nuvem.png" alt="Logo UserTech" width="32" style="height: auto;">
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -29,20 +37,27 @@
     </div>
   </nav>
 
-  <header class="text-center py-5 bg-primary text-white">
+  <!-- Header -->
+  <header class="text-center py-5 text-white" id="home">
     <h1>UserTech Cloud</h1>
     <p>Soluções de documentação e manutenibilidade em nuvem</p>
   </header>
 
+  <!-- Parallax -->
   <section class="parallax"></section>
 
+  <!-- Conteúdo -->
   <main class="container py-5">
+
+    <!-- Sobre -->
     <section id="sobre" class="mb-5">
       <h2>Sobre nós</h2>
-      <p>Somos especialistas em manter sua infraestrutura bem documentada, organizada e pronta para escalar na nuvem.</p>
-      <a href="https://wa.me/5511963169044" target="_blank" class="btn btn-success mt-2">Solicite uma consultoria</a>
+      <p>Somos especialistas em manter sua infraestrutura bem documentada, organizada e pronta para escalar na nuvem.
+      </p>
+      <a href="https://wa.me/5511999999999" target="_blank" class="btn btn-success mt-2">Solicite uma consultoria</a>
     </section>
 
+    <!-- Serviços -->
     <section id="servicos" class="mb-5">
       <h2>Serviços</h2>
       <ul>
@@ -54,42 +69,47 @@
       </ul>
     </section>
 
-    <section id="vantagens" class="mb-5">
-      <h2>Por que escolher a UserTech?</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <h3>🚀 Agilidade</h3>
+    <section id="vantagens" class="mb-5 text-white">
+      <h2 class="text-center mb-4">Por que escolher a UserTech?</h2>
+      <div class="vantagens-container">
+        <div class="vantagem-container">
+          <h3><span class="icone">🚀</span> Agilidade</h3>
           <p>Projetos entregues com rapidez e precisão.</p>
         </div>
-        <div class="col-md-4">
-          <h3>🔐 Segurança</h3>
+        <div class="vantagem-container">
+          <h3><span class="icone">🔐</span> Segurança</h3>
           <p>Seus dados protegidos com as melhores práticas do mercado.</p>
         </div>
-        <div class="col-md-4">
-          <h3>📈 Escalabilidade</h3>
+        <div class="vantagem-container">
+          <h3><span class="icone">📈</span> Escalabilidade</h3>
           <p>Soluções pensadas para acompanhar seu crescimento.</p>
         </div>
       </div>
     </section>
 
+
+    <!-- Depoimentos -->
     <section id="depoimentos" class="mb-5">
       <h2>O que nossos clientes dizem</h2>
-      <blockquote class="blockquote">
-        <p class="mb-0">"A UserTech transformou nossa infraestrutura. Hoje temos tudo organizado e seguro na nuvem!"</p>
-        <footer class="blockquote-footer">Ana Souza, CTO da DevCorp</footer>
-      </blockquote>
-      <blockquote class="blockquote mt-3">
-        <p class="mb-0">"Excelente suporte e soluções eficazes. Recomendo a todos que buscam organização em TI."</p>
-        <footer class="blockquote-footer">Marcos Lima, Analista de Sistemas</footer>
-      </blockquote>
+      <div class="depoimentos-container">
+        <blockquote class="blockquote">
+          <p>"A UserTech transformou nossa infraestrutura. Hoje temos tudo organizado e seguro na nuvem!"</p>
+          <footer class="blockquote-footer">Ana Souza, CTO da DevCorp</footer>
+        </blockquote>
+        <blockquote class="blockquote">
+          <p>"Excelente suporte e soluções eficazes. Recomendo a todos que buscam organização em TI."</p>
+          <footer class="blockquote-footer">Marcos Lima, Analista de Sistemas</footer>
+        </blockquote>
+      </div>
     </section>
 
+    <!-- Planos -->
     <section id="planos" class="row mb-5">
       <h3 class="text-center mb-4">Planos da UserTech</h3>
 
       <div class="col-md-4">
         <div class="card h-100">
-          <img src="src/img/plano-mensal.png" class="card-img-top" alt="plano-mensal">
+          <img src="/src/img/plano-mensal.png" class="card-img-top" alt="plano-mensal">
           <div class="card-body">
             <h5 class="card-title">Plano Mensal</h5>
             <p class="card-text">Acesso à manutenção preventiva e corretiva por 30 dias com 1TB de armazenamento.</p>
@@ -100,37 +120,41 @@
 
       <div class="col-md-4">
         <div class="card h-100">
-          <img src="src/img/plano-semestral.png" class="card-img-top" alt="plano-semestral">
+          <img src="/src/img/plano-semestral.png" class="card-img-top" alt="plano-semestral">
           <div class="card-body">
             <h5 class="card-title">Plano Semestral</h5>
             <p class="card-text">Acesso ao serviço por 6 meses com 5TB de armazenamento.</p>
-            <a href="plano-semstral/pagamento.html" class="btn btn-primary">Fechar plano</a>
+            <a href="plano-semstral/" class="btn btn-primary">Fechar plano</a>
           </div>
         </div>
       </div>
 
       <div class="col-md-4">
         <div class="card h-100">
-          <img src="src/img/plano-anual.png" class="card-img-top" alt="plano-anual">
+          <img src="/src/img/plano-anual.png" class="card-img-top" alt="plano-anual">
           <div class="card-body">
             <h5 class="card-title">Plano Anual</h5>
             <p class="card-text">Serviços por 12 meses com 10TB de armazenamento incluso.</p>
-            <a href="plano-anual/pagamento.html" class="btn btn-primary">Fechar plano</a>
+            <a href="/plano-anual/pagamento.html" class="btn btn-primary">Fechar plano</a>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Contato -->
     <section id="contato" class="mb-5">
       <h2>Contato</h2>
       <p>Email: <a href="mailto:usertech@gmail.com">usertech@gmail.com</a></p>
     </section>
   </main>
 
-  <footer class="bg-dark text-white text-center py-3">
+  <!-- Rodapé -->
+  <footer class="text-white text-center py-3">
     <p>&copy; 2025 UserTech Cloud. Todos os direitos reservados.</p>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
