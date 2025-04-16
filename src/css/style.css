@@ -85,15 +85,17 @@ h2 {
 p {
   margin-bottom: 1rem;
 }
-
 .parallax {
   background-image: url("/src/img/plano-de-fundo.png");
   background-attachment: fixed;
-  background-size: contain;
+  background-size: contain; /* Ajusta para mostrar a imagem inteira */
   background-repeat: no-repeat;
-  background-position: center;
-  min-height: 500px;
+  background-position: center; /* Centraliza a imagem na área */
+  height: 100vh; /* A altura é 100% da altura da viewport */
+  width: 100%; /* A largura é 100% da tela */
 }
+
+
 
 img {
   max-width: 100%;
@@ -166,6 +168,7 @@ a:hover {
   padding: 8rem 2rem;
   
 }
+
 
 /* Seção de Vantagens */
 .vantagens-container {
@@ -250,6 +253,9 @@ a:hover {
   color: #a0a0a0;
   font-style: normal;
   font-size: 0.95rem;
+}
+.planos{
+  padding: 8rem 2rem;
 }
 
 #contato {
